@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+import { Nav } from 'react-bootstrap';
 
-import logo from '../styles/logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 
 class App extends Component {
 
   state = {
     isLoading: false,
-    page: "",
+    page: "Me",
   };
 
   componentDidMount() {
-      this.setState( {page : "me"});
   }
 
   topMenuClick(x) {
@@ -20,7 +20,7 @@ class App extends Component {
     // }
     // if (x === "Publish") {
     //     this.setState({page: <ComposeComponent setMainPage={() => this.setMainPage()}/> });
-    // }
+    this.setState({page: x})
   }
 
   render() {
@@ -31,21 +31,20 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <div className="Header">
+        <Nav variant="pills" defaultActiveKey="Me">
+          <Nav.Item>
+            <Nav.Link eventKey="Me" onClick={ () => this.topMenuClick("Me")}> Me </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="Github" onClick={ () => this.topMenuClick("Info")}> Github </Nav.Link>
+          </Nav.Item>
+        </Nav>
+        </div>
+        <div className="App">
+            {this.state.page}
+        </div>
       </div>
     );
   }
