@@ -4,14 +4,14 @@ import { Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 
-import Me from "./Me.js";
-import Portfolio from "./Portfolio.js";
+import Saku from './Saku.js';
+import Portfolio from './Portfolio.js';
 
 export default class App extends Component {
 
   state = {
     isLoading: false,
-    page: "Me",
+    page: <Saku/>,
   };
 
   componentDidMount() {
@@ -19,10 +19,10 @@ export default class App extends Component {
   }
 
   topMenuClick(x) {
-    if (x === "Me") {
-        this.setState({page: <Me/> });
+    if (x === 'Saku') {
+        this.setState({page: <Saku/> });
     }
-    if (x === "Info") {
+    if (x === 'Info') {
         this.setState({page: <Portfolio/> });
     }
   }
@@ -36,17 +36,17 @@ export default class App extends Component {
 
     return (
       <div>
-        <div className="Header">
-        <Nav variant="pills" defaultActiveKey="Me">
+        <div className='Header'>
+        <Nav variant='pills' defaultActiveKey='Saku'>
           <Nav.Item>
-            <Nav.Link eventKey="Me" onClick={ () => this.topMenuClick("Me")}> Me </Nav.Link>
+            <Nav.Link eventKey='Saku' onClick={ () => this.topMenuClick('Saku')}> Saku </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="Github" onClick={ () => this.topMenuClick("Info")}> Github </Nav.Link>
+            <Nav.Link eventKey='Github' onClick={ () => this.topMenuClick('Info')}> Github </Nav.Link>
           </Nav.Item>
         </Nav>
         </div>
-        <div className="App">
+        <div className='App'>
             {this.state.page}
         </div>
       </div>
