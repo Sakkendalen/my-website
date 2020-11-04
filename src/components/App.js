@@ -4,7 +4,10 @@ import { Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 
-class App extends Component {
+import Me from "./Me.js";
+import Portfolio from "./Portfolio.js";
+
+export default class App extends Component {
 
   state = {
     isLoading: false,
@@ -12,15 +15,16 @@ class App extends Component {
   };
 
   componentDidMount() {
+
   }
 
   topMenuClick(x) {
-    // if (x === "Search") {
-    //     this.setState({page: <SearchComponent onClick={ (a) => this.showSinglePostClick(a)} formatTime={(e) => this.formatTime(e)} /> });
-    // }
-    // if (x === "Publish") {
-    //     this.setState({page: <ComposeComponent setMainPage={() => this.setMainPage()}/> });
-    this.setState({page: x})
+    if (x === "Me") {
+        this.setState({page: <Me/> });
+    }
+    if (x === "Info") {
+        this.setState({page: <Portfolio/> });
+    }
   }
 
   render() {
@@ -49,5 +53,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
