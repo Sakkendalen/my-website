@@ -34,10 +34,10 @@ export default class Info extends Component {
               <div className='content'>
                 <Grid container justify='center' spacing={2}>
                   {this.state.data.sort((a,b) => {
-                    if(a.created < b.created) { 
+                    if(a.created_at < b.created_at) { 
                       return true
                     }
-                    else if (a.created > b.created) { 
+                    else if (a.created_at > b.created_at) { 
                       return false
                     }
                     return 0
