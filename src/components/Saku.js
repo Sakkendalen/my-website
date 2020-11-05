@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography, Paper } from '@material-ui/core';
 import { Image } from 'react-bootstrap';
 
 import '../styles/Saku.css';
@@ -24,17 +24,21 @@ export default class Saku extends Component {
         return (
           <div className='content'>
             <div className='shortInfo'>
-                  <div className='imgCont'>
-                    <Image alt='kuva' src={logo} rounded style={{maxHeight:'50vh', maxWidth:'50vh' }} />
-                  </div>
-                  <Typography variant='body2'>
-                    täsä mä olen
-                  </Typography>
+              <Paper variant="outlined" style={{backgroundColor: '#282c34'}}>
+                <div className='imgCont'>
+                  <Image alt='kuva' src={logo} rounded style={{maxHeight:'50vh', maxWidth:'50vh', padding: '2vh' }} />
+                </div>
+                <Typography variant='body2' style={{paddingTop: '2vh', paddingBottom: '2vh', color: 'white' }}>
+                  täsä mä olen
+                </Typography>
+              </Paper>
             </div>
             <div className='textCont'>
-                  <Typography variant='body2'>
+              <Paper variant="outlined" style={{backgroundColor: '#282c34'}}>
+                <Typography variant='body2'style={{padding: '5vh', color: 'white' }}>
                   {aboutText}
-                  </Typography>
+                </Typography>
+              </Paper>
             </div>
           </div>
         );
