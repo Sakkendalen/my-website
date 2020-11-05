@@ -31,13 +31,13 @@ export default class Info extends Component {
 
         if(this.state.data && this.props.value === this.props.index) {
             return (
-              <div className='eka'>
+              <div className='content'>
                 <Grid container justify='center' spacing={2}>
                   {this.state.data.sort((a,b) => {
-                    if(a.created_at < b.created_at) { 
+                    if(a.created < b.created) { 
                       return true
                     }
-                    else if (a.created_at > b.created_at) { 
+                    else if (a.created > b.created) { 
                       return false
                     }
                     return 0

@@ -63,7 +63,7 @@ export default class Item extends Component {
           <Typography gutterBottom variant='h5' component='h2' style={{marginTop: 24, textAlign: 'center', minHeight: 70}}>
             {this.props.name}
           </Typography>
-          <div align={'center'} style={{marginBottom: 36}}>
+          <div className='eka'>
             <Icon path={this.state.icon}
                   title='User Profile'
                   size={5}
@@ -71,18 +71,18 @@ export default class Item extends Component {
             />
           </div>
           <Divider style={{marginBottom: 12,}} />
-          <div style={{marginLeft: 12, minHeight: 125}}>
-            <Typography variant='body2' color='textSecondary' component='p' style={{paddingBottom: 12}}>
+          <div className='toka'>
+            <Typography variant='body2' color='textSecondary' component='p' style={{paddingBottom: '1.2vh'}}>
               {this.state.date}
             </Typography>
             <Typography variant='body2' component='p'>
               Description:
             </Typography>
-            <Typography variant='body2' color='textSecondary' component='p' style={{paddingBottom: 12}}>
+            <Typography variant='body2' color='textSecondary' component='p' style={{paddingBottom: '1.2vh'}}>
               {this.props.description}
             </Typography>
           </div>
-          <CardActions disableSpacing style={{flexDirection: 'row-reverse'}}>
+          <CardActions disableSpacing style={{flexDirection: 'column'}}>
             <IconButton onClick={()=> window.open(this.props.link)}>
               <GitHubIcon color='primary'/>
             </IconButton>
