@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import {CardContent, Divider, Typography, CardActions, IconButton} from '@material-ui/core';
+import { CardContent, Typography, CardActions, IconButton } from '@material-ui/core';
+import { green } from '@material-ui/core/colors';
 import Icon from '@mdi/react'
 import { mdiLanguageJava, mdiLanguageSwift, mdiLanguageCsharp, mdiLanguageJavascript  } from '@mdi/js'
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -53,38 +54,36 @@ export default class Item extends Component {
       month = '0' + month;
     }
 
-    return day + '-' + month + '-' + year;
+    return day + '.' + month + '.' + year;
   }
 
   render() {
     if(this.props.value === this.props.index) {
       return (
         <CardContent style={{padding: 0}}>
-          <Typography gutterBottom variant='h5' component='h2' style={{marginTop: '2.4vh', textAlign: 'center', minHeight: 70}}>
+          <Typography gutterBottom variant='h5' component='h2' style={{marginTop: '2.4vh', textAlign: 'center', minHeight: '7vh'}}>
             {this.props.name}
           </Typography>
-          <div className='eka'>
+          <div className='iconCont'>
             <Icon path={this.state.icon}
-                  title='User Profile'
                   size={5}
-                  color='#003875'
+                  color='#001021'
             />
           </div>
-          <Divider style={{marginBottom: 12,}} />
-          <div className='toka'>
-            <Typography variant='body2' color='textSecondary' component='p' style={{paddingBottom: '1.2vh'}}>
+          <div className='infoCont'>
+            <Typography variant='body2' color='textPrimary' style={{paddingBottom: '1.5vh'}}>
               {this.state.date}
             </Typography>
-            <Typography variant='body2' component='p'>
+            <Typography variant='body1'>
               Description:
             </Typography>
-            <Typography variant='body2' color='textSecondary' component='p' style={{paddingBottom: '1.2vh'}}>
+            <Typography variant='body2' color='textSecondary' style={{paddingBottom: '1.5vh'}}>
               {this.props.description}
             </Typography>
           </div>
           <CardActions disableSpacing style={{flexDirection: 'column'}}>
             <IconButton onClick={()=> window.open(this.props.link)}>
-              <GitHubIcon/>
+              <GitHubIcon style={{ color: green[50]}}/>
             </IconButton>
           </CardActions>
         </CardContent>
