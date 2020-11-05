@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Typography, Card, CardContent, Avatar, makeStyles } from '@material-ui/core';
 
 import '../styles/App.css';
-import logo from '../styles/placeholder.jpg';
+import logo from '../styles/Images/placeholder.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {

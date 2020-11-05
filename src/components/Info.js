@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import {Card, Box, Grid} from '@material-ui/core';
 
-import PortItem from './PortItem.js'
+import Item from './Item.js'
 import '../styles/App.css';
 
 const style = {
@@ -11,7 +11,7 @@ const style = {
     background: '#334A76' 
   }
 
-export default class Portfolio extends Component {
+export default class Info extends Component {
 
     constructor(props) {
         super(props);
@@ -43,7 +43,7 @@ export default class Portfolio extends Component {
                     return (
                       <Grid item key={data.id}>
                         <Card style={style}>
-                          <PortItem name={data.name} language={data.language} description={data.description} date={data.created_at} link={data.html_url}/>
+                          <Item name={data.name} language={data.language} description={data.description} date={data.created_at} link={data.html_url}/>
                         </Card>
                       </Grid>
                     )

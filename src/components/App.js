@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 
 import Saku from './Saku.js';
-import Portfolio from './Portfolio.js';
+import Info from './Info.js';
 
 export default class App extends Component {
 
@@ -23,7 +23,7 @@ export default class App extends Component {
         this.setState({page: <Saku/> });
     }
     if (x === 'Info') {
-        this.setState({page: <Portfolio/> });
+        this.setState({page: <Info/> });
     }
   }
 
