@@ -8,7 +8,7 @@ import '../styles/Info.css';
 const style = {
     maxWidth: 345,
     minWidth: 345,
-    background: '#334A76' 
+    background: '#007bff' 
   }
 
 export default class Info extends Component {

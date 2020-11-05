@@ -60,14 +60,14 @@ export default class Item extends Component {
     if(this.props.value === this.props.index) {
       return (
         <CardContent style={{padding: 0}}>
-          <Typography gutterBottom variant='h5' component='h2' style={{marginTop: 24, textAlign: 'center', minHeight: 70}}>
+          <Typography gutterBottom variant='h5' component='h2' style={{marginTop: '2.4vh', textAlign: 'center', minHeight: 70}}>
             {this.props.name}
           </Typography>
           <div className='eka'>
             <Icon path={this.state.icon}
                   title='User Profile'
                   size={5}
-                  color='#80deea'
+                  color='#003875'
             />
           </div>
           <Divider style={{marginBottom: 12,}} />
@@ -84,7 +84,7 @@ export default class Item extends Component {
           </div>
           <CardActions disableSpacing style={{flexDirection: 'column'}}>
             <IconButton onClick={()=> window.open(this.props.link)}>
-              <GitHubIcon color='primary'/>
+              <GitHubIcon/>
             </IconButton>
           </CardActions>
         </CardContent>
