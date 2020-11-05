@@ -1,0 +1,25 @@
+.eka {
+    display: flex; 
+    flex: 1; 
+    flex-direction: row; 
+    min-width: 80%;
+}
+
+.toka {
+    display: flex; 
+    flex: 1; 
+    flex-direction: column;
+}
+
+.kolmas {
+    padding-top: 5vh;
+    align-self: center;
+}
+
+.viides {
+    display: flex;
+    flex: 2;
+    padding-top: 5vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}

@@ -5,6 +5,8 @@ import Icon from '@mdi/react'
 import { mdiLanguageJava, mdiLanguageSwift, mdiLanguageCsharp, mdiLanguageJavascript  } from '@mdi/js'
 import GitHubIcon from '@material-ui/icons/GitHub';
 
+import '../styles/Item.css';
+
 export default class Item extends Component {
 
   constructor(props) {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import {Card, Box, Grid} from '@material-ui/core';
+import {Card, Grid} from '@material-ui/core';
 
 import Item from './Item.js'
-import '../styles/App.css';
+import '../styles/Info.css';
 
 const style = {
     maxWidth: 345,
@@ -25,19 +25,21 @@ export default class Info extends Component {
         fetch('https://api.github.com/users/Sakkendalen/repos')
           .then(response => response.json())
           .then(data => this.setState({ data }));
-          console.log('' + this.state.data);
       }
 
     render() {
 
         if(this.state.data && this.props.value === this.props.index) {
             return (
-              <div style={{maxWidth: '100vw', overflow: 'hidden', paddingBottom: 100}}>
-                <Box style={{paddingTop: 100, flex: 1}}/>
+              <div className='eka'>
                 <Grid container justify='center' spacing={2}>
                   {this.state.data.sort((a,b) => {
-                    if(a.created_at < b.created_at) return 1
-                    else if (a.created_at > b.created_at) return -1
+                    if(a.created_at < b.created_at) { 
+                      return true
+                    }
+                    else if (a.created_at > b.created_at) { 
+                      return false
+                    }
                     return 0
                   }).map(data => {
                     return (
