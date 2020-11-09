@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { CardContent, Typography, CardActions, IconButton } from '@material-ui/core';
+import { CardContent, Typography, CardActions, IconButton, Divider } from '@material-ui/core';
 import { green } from '@material-ui/core/colors';
 import Icon from '@mdi/react'
 import { mdiLanguageJava, mdiLanguageSwift, mdiLanguageCsharp, mdiLanguageJavascript  } from '@mdi/js'
@@ -61,7 +61,7 @@ export default class Item extends Component {
     if(this.props.value === this.props.index) {
       return (
         <CardContent style={{padding: 0}}>
-          <Typography gutterBottom variant='h5' component='h2' style={{marginTop: '2.4vh', textAlign: 'center', minHeight: '7vh'}}>
+          <Typography gutterBottom variant='h5' component='h2' style={{marginTop: '2vh', textAlign: 'center'}}>
             {this.props.name}
           </Typography>
           <div className='iconCont'>
@@ -70,8 +70,9 @@ export default class Item extends Component {
                   color='#001021'
             />
           </div>
+          <Divider variant="middle" style={{ backgroundColor: 'white' }} />
           <div className='infoCont'>
-            <Typography variant='body2' color='textPrimary' style={{paddingBottom: '1.5vh'}}>
+            <Typography variant='body2' color='textPrimary' style={{paddingBottom: '1.5vh', paddingTop: '1vh'}}>
               {this.state.date}
             </Typography>
             <Typography variant='body1'>
@@ -81,6 +82,7 @@ export default class Item extends Component {
               {this.props.description}
             </Typography>
           </div>
+          <Divider variant="middle" style={{ backgroundColor: 'white' }} />
           <CardActions disableSpacing style={{flexDirection: 'column'}}>
             <IconButton onClick={()=> window.open(this.props.link)}>
               <GitHubIcon style={{ color: green[50]}}/>
