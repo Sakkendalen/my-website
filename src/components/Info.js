@@ -19,13 +19,13 @@ export default class Info extends Component {
         this.state = {
           data: null
         }
-      }
+    }
     
-      componentDidMount() {
-        fetch('https://api.github.com/users/Sakkendalen/repos')
-          .then(response => response.json())
-          .then(data => this.setState({ data }));
-      }
+    componentDidMount() {
+      fetch('https://api.github.com/users/Sakkendalen/repos')
+        .then(response => response.json())
+        .then(data => this.setState({ data }));
+    }
 
     render() {
 

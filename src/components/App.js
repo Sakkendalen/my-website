@@ -9,10 +9,13 @@ import Info from './Info.js';
 
 export default class App extends Component {
 
-  state = {
-    isLoading: false,
-    page: <Saku/>,
-  };
+  constructor(props){
+    super(props);
+    this.state = {
+      isLoading: false,
+      page: <Saku/>,
+    };
+  }
 
   componentDidMount() {
 
