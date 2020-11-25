@@ -37,11 +37,11 @@ export default class Item extends Component {
       })
     }
     this.setState({
-      date: this.formatDate(this.props.date)
+      date: this.dateFormat(this.props.date)
     })
   }
 
-  formatDate(date) {
+  dateFormat(date) {
     const newDate = new Date(date);
     const year = newDate.getFullYear();
     let month = newDate.getMonth() + 1;
