@@ -79,6 +79,13 @@ export default class Saku extends Component {
                 <Typography variant='body2' style={{paddingTop: '0.5vh', paddingBottom: '1vh', color: 'white' }}>
                   pelailen
                 </Typography>
+                <Divider variant="middle" style={{ backgroundColor: 'white' }} />
+                <Typography variant='body2' style={{paddingTop: '0.5vh', paddingBottom: '0.5vh', color: 'white' }}>
+                  Kuinka ottaa yhteyttä?
+                </Typography>
+                <Typography variant='body2' style={{paddingTop: '0.5vh', paddingBottom: '1vh', color: 'white' }}>
+                  Sähköposti: Sakutynjala@gmail.com
+                </Typography>
               </Paper>
             </div>
             <div className='textCont'>
