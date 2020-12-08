@@ -84,7 +84,7 @@ export default class Saku extends Component {
                   Kuinka ottaa yhteyttä?
                 </Typography>
                 <Typography variant='body2' style={{paddingTop: '0.5vh', paddingBottom: '1vh', color: 'white' }}>
-                  Sähköposti: Sakutynjala@gmail.com
+                  Sakutynjala@gmail.com
                 </Typography>
               </Paper>
             </div>
