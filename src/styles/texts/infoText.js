@@ -1,6 +1,4 @@
-const mytext = `Moro. \n
-Olen opiskelija Tampereen ammattikorkeakoulussa, Tietojenkäsittelyn tutkinto-ohjelmassa ja suuntautuminen on Ohjelmistotuotanto, jolla opinnot ovat loppusuoralla. Olen iloinen ja sosiaalinen persoona, jolle puujalkavitsit ovat erityisen lähellä sydäntä. Olen valmis kokeilemaan uusia asioita, josta hyvänä esimerkkinä voin mainita muutaman vuoden takaisen laskuvarjohyppykurssin, johon sen aikainen työkaveri innosti mukaan. Harrastuksiini kuuluu videopelit ja niissä erinäköisten haasteiden päihittäminen kaveriporukalla sekä pyöräily (tämä tauolla, koska pyörä lähti sitä ilmeisesti enemmän tarvitsevan matkaan). Tavoitteena olisi nyt löytää työpaikka/harjoittelupaikka, jossa oppia uusia asioita ja kehittää omia taitoja kohtaamalla uusia haasteita hyvässä, kannustavassa ja toisiaan tukevassa työporukassa.
-Projekteja on koulussa tullut kyhäiltyä java-, JavaScript-, Swift-, React-, React Native-, Spring Boot-, Angular- ja C#- kielillä/tekniikoilla osana kursseja, asiakasprojekteja sekä paria peliprojektia.
-`;
+const mytext = `I am a foruth year student in Tampere University of Applied Sciences. 
+Currently I am getting my degree on Software development. `;
 
 export default mytext ;

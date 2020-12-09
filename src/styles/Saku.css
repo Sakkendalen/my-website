@@ -19,6 +19,18 @@
         flex-direction: row;
         padding: 2vh;
     }
+
+    .textContRow {
+        display: flex; 
+        flex: 1; 
+        flex-direction: row;
+    }
+
+    .textContRow2 {
+        display: flex; 
+        flex: 1; 
+        flex-direction: column;
+    }
     
     .imgCont {
         align-self: center;
@@ -29,6 +41,7 @@
         flex: 2;
         padding-left: 15vh;
         padding-right: 15vh;
+        min-width: 50vh;
     }
 }
 
