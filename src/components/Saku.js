@@ -5,7 +5,8 @@ import { green } from '@material-ui/core/colors';
 
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import WorkRoundedIcon from '@material-ui/icons/WorkRounded';
-import SportsEsportsRoundedIcon from '@material-ui/icons/SportsEsportsRounded';
+import EmojiFoodBeverageRoundedIcon from '@material-ui/icons/EmojiFoodBeverageRounded';
+import EmojiObjectsRoundedIcon from '@material-ui/icons/EmojiObjectsRounded';
 
 import '../styles/Saku.css';
 import logo from '../styles/Images/placeholder.jpg';
@@ -39,7 +40,7 @@ export default class Saku extends Component {
       if (nowMonth > myMonth){
         return age
       }
-      else if (nowMonth == myMonth && nowDay >= myDay) {
+      else if (nowMonth === myMonth && nowDay >= myDay) {
         return age
       }
       else {
@@ -60,8 +61,11 @@ export default class Saku extends Component {
                 <Typography variant='h5' style={{paddingTop: '0.5vh', paddingBottom: '0.5vh', color: 'white' }}>
                   Saku Tynjälä
                 </Typography>
-                <Typography variant='body1' style={{paddingTop: '0.5vh', paddingBottom: '1vh', color: 'white' }}>
+                <Typography variant='body1' style={{paddingTop: '0.5vh', paddingBottom: '0.5vh', color: 'white' }}>
                   Student
+                </Typography>
+                <Typography variant='body2' style={{paddingTop: '0.5vh', paddingBottom: '1vh', color: 'white' }}>
+                  Tampere
                 </Typography>
                 <Divider variant="middle" style={{ backgroundColor: 'white' }} />
                 <Typography variant='h5' style={{paddingTop: '1vh', paddingBottom: '0.5vh', color: 'white' }}>
@@ -252,7 +256,7 @@ export default class Saku extends Component {
 
                   <Divider variant="middle" style={{ backgroundColor: 'white' }} />
                   <div className='textContShort'>
-                    <WorkRoundedIcon style={{ color: green[50]}}/>
+                    <EmojiFoodBeverageRoundedIcon style={{ color: green[50]}}/>
                     <Typography variant='h5' style={{ paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
                       Position of responsibility
                     </Typography>
@@ -271,6 +275,62 @@ export default class Saku extends Component {
                     </Typography>
                     <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
                   </div>
+
+                  <Divider variant="middle" style={{ backgroundColor: 'white' }} />
+                  <div className='textContShort'>
+                    <EmojiObjectsRoundedIcon style={{ color: green[50]}}/>
+                    <Typography variant='h5' style={{ paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      Technologies
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='h6' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Programming Languages
+                    </Typography>
+                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white'}}>
+                      Level
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Java
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      JavaScript
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      Good
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Typescript
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      Basics+
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      C#
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      Basics
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      C++
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      Basics
+                    </Typography>
+                  </div>
+
               </Paper>
             </div>
           </div>

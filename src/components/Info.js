@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import {Card, Grid} from '@material-ui/core';
-import grey from '@material-ui/core/colors/grey';
 
 import Item from './Item.js'
 import '../styles/Info.css';

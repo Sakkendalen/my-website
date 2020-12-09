@@ -25,12 +25,6 @@
         flex: 1; 
         flex-direction: row;
     }
-
-    .textContRow2 {
-        display: flex; 
-        flex: 1; 
-        flex-direction: column;
-    }
     
     .imgCont {
         align-self: center;
@@ -75,5 +69,9 @@
         max-width: 65vh;
         justify-content: center;
         align-self: center;
+    }
+
+    .SkillLevel{
+        display: none !important;
     }
 }

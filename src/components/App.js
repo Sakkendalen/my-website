@@ -45,10 +45,10 @@ export default class App extends Component {
         <div className='Header'>
         <AppBar className='Header' style={{ backgroundColor: '#282c34', position:'absolute'}}>
           <Toolbar>
-          <Button variant='contained' color='primary' eventKey='Saku' onClick={ () => this.topMenuClick('Saku')} style={{marginInline: '1vh', backgroundColor: '#007bff'}}>
+          <Button variant='contained' color='primary' onClick={ () => this.topMenuClick('Saku')} style={{marginInline: '1vh', backgroundColor: '#007bff'}}>
             Saku
           </Button>
-          <Button variant='contained' color='primary' eventKey='Saku' onClick={ () => this.topMenuClick('Info')} style={{marginInline: '1vh', backgroundColor: '#007bff'}}>
+          <Button variant='contained' color='primary' onClick={ () => this.topMenuClick('Info')} style={{marginInline: '1vh', backgroundColor: '#007bff'}}>
             Github
           </Button>
           </Toolbar>

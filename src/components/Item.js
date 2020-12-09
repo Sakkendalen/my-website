@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { CardContent, Typography, CardActions, IconButton, Divider } from '@material-ui/core';
-import { green, grey } from '@material-ui/core/colors';
+import { green } from '@material-ui/core/colors';
 import Icon from '@mdi/react'
 import { mdiLanguageJava, mdiLanguageSwift, mdiLanguageCsharp, mdiLanguageJavascript  } from '@mdi/js'
 import GitHubIcon from '@material-ui/icons/GitHub';
