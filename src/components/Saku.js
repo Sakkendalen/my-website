@@ -113,10 +113,14 @@ export default class Saku extends Component {
                   Programming
                 </Typography>
                 <Typography variant='body1' style={{paddingTop: '0.5vh', paddingBottom: '1vh', color: 'white' }}>
-                  more...
+                  Movies
+                </Typography>
+                <Typography variant='body1' style={{paddingTop: '0.5vh', paddingBottom: '1vh', color: 'white' }}>
+                  Music
                 </Typography>
               </Paper>
             </div>
+            
             <div className='textCont'>
               <Paper variant="outlined" style={{backgroundColor: '#282c34'}}>
                 <div className='textContShort'>
@@ -296,6 +300,7 @@ export default class Saku extends Component {
                       Java
                     </Typography>
                     <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      Good
                     </Typography>
                   </div>
                   <div className='textContRow'>
@@ -323,12 +328,111 @@ export default class Saku extends Component {
                     </Typography>
                   </div>
                   <div className='textContRow'>
-                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
                       C++
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
                       Basics
                     </Typography>
+                  </div>
+
+                  <div className='textContRow'>
+                    <Typography variant='h6' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Frameworks
+                    </Typography>
+                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white'}}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Node.js
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      React Native
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      React
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Spring
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Unity
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
+                      Angular
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+
+                  <div className='textContRow'>
+                    <Typography variant='h6' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Databases
+                    </Typography>
+                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white'}}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      MySQL
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
+                      H2
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+
+                  <div className='textContRow'>
+                    <Typography variant='h6' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Tools
+                    </Typography>
+                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white'}}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Android Studio
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Visual Studio Code
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Xcode
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      IntelliJ
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
+                      GitLab
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
                   </div>
 
               </Paper>

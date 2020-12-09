@@ -36,6 +36,7 @@
         padding-left: 15vh;
         padding-right: 15vh;
         min-width: 50vh;
+        max-width: 150vh;
     }
 }
 
@@ -54,6 +55,7 @@
         justify-content: center;
         align-self: center;
         min-width: 50vh;
+        max-width: 50vh;
         padding-bottom: 5vh;
     }
     
@@ -62,13 +64,14 @@
     }
     
     .textCont {
-        display: flex;
-        padding-left: 7.5vh;
-        padding-right: 7.5vh;
-        min-width: 50vh;
-        max-width: 65vh;
+        display: flex; 
+        flex: 1; 
+        flex-direction: column;
         justify-content: center;
         align-self: center;
+        min-width: 50vh;
+        max-width: 50vh;
+        padding-bottom: 5vh;
     }
 
     .SkillLevel{
