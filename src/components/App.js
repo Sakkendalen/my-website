@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Nav } from 'react-bootstrap';
+
+import {AppBar, Toolbar, Button} from '@material-ui/core';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
@@ -29,6 +31,7 @@ export default class App extends Component {
         this.setState({page: <Info/> });
     }
   }
+  
 
   render() {
     const {isLoading} = this.state;
@@ -40,14 +43,16 @@ export default class App extends Component {
     return (
       <div>
         <div className='Header'>
-        <Nav variant='pills' defaultActiveKey='Saku'>
-          <Nav.Item>
-            <Nav.Link eventKey='Saku' onClick={ () => this.topMenuClick('Saku')}> Saku </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey='Github' onClick={ () => this.topMenuClick('Info')}> Github </Nav.Link>
-          </Nav.Item>
-        </Nav>
+        <AppBar className='Header' style={{ backgroundColor: '#282c34'}}>
+          <Toolbar>
+          <Button variant='contained' color='primary' eventKey='Saku' onClick={ () => this.topMenuClick('Saku')} style={{marginInline: '1vh'}}>
+            Saku
+          </Button>
+          <Button variant='contained' color='primary' eventKey='Saku' onClick={ () => this.topMenuClick('Info')} style={{marginInline: '1vh'}}>
+            Github
+          </Button>
+          </Toolbar>
+        </AppBar>
         </div>
         <div className='App'>
             {this.state.page}
