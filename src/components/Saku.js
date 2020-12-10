@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Typography, Paper, Divider, Link } from '@material-ui/core';
 import { Image } from 'react-bootstrap';
 import { green } from '@material-ui/core/colors';
+import { Rating } from '@material-ui/lab';
 
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import WorkRoundedIcon from '@material-ui/icons/WorkRounded';
@@ -300,7 +301,7 @@ export default class Saku extends Component {
                       Java
                     </Typography>
                     <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
-                      Good
+                      <Rating name="read-only" value={4} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
                     </Typography>
                   </div>
                   <div className='textContRow'>
@@ -308,15 +309,7 @@ export default class Saku extends Component {
                       JavaScript
                     </Typography>
                     <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
-                      Good
-                    </Typography>
-                  </div>
-                  <div className='textContRow'>
-                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
-                      Typescript
-                    </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
-                      Basics+
+                      <Rating name="read-only" value={4} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
                     </Typography>
                   </div>
                   <div className='textContRow'>
@@ -324,15 +317,23 @@ export default class Saku extends Component {
                       C#
                     </Typography>
                     <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
-                      Basics
+                      <Rating name="read-only" value={3} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      Typescript
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={2} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
                     </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
                       C++
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
-                      Basics
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={2} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
                     </Typography>
                   </div>
 
@@ -346,93 +347,119 @@ export default class Saku extends Component {
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Node.js
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
-                  </div>
-                  <div className='textContRow'>
-                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
-                      React Native
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={4} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       React
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={3} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      React Native
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={3} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Spring
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={3} readonly style={{ flex:'1', paddingbottom: '0.5vh', paddinginline: '5vh'}}/>
+                    </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Unity
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={3} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
                       Angular
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={2} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
 
                   <div className='textContRow'>
                     <Typography variant='h6' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Databases
                     </Typography>
-                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white'}}/>
+                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white'}}/>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       MySQL
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={4} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
                       H2
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={3} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
 
                   <div className='textContRow'>
                     <Typography variant='h6' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Tools
                     </Typography>
-                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white'}}/>
+                    <Typography className='SkillLevel' variant='h6' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white'}}/>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Android Studio
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={4} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Visual Studio Code
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
-                  </div>
-                  <div className='textContRow'>
-                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
-                      Xcode
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={4} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       IntelliJ
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={3} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                      GitLab
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={3} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
-                      GitLab
+                      Xcode
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      <Rating name="read-only" value={2} readOnly style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh'}}/>
+                    </Typography>
                   </div>
 
               </Paper>
