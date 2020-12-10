@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Typography, Paper, Divider, Link } from '@material-ui/core';
-import { Image, Media } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import { green } from '@material-ui/core/colors';
 import { Rating } from '@material-ui/lab';
-import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
 
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import WorkRoundedIcon from '@material-ui/icons/WorkRounded';

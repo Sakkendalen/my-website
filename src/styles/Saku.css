@@ -85,11 +85,4 @@
     .SkillLevel{
         display: none !important;
     }
-
-    .dateAlign {
-        flex: 1; 
-        padding-bottom: 0.5vh;
-        padding-inline: 5vh;
-        color: white;
-    }
 }
