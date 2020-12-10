@@ -56,7 +56,7 @@ export default class Saku extends Component {
         return (
           <div className='content'>
             <div className='shortInfo'>
-              <Paper variant="outlined" style={{backgroundColor: '#282c34'}}>
+              <Paper variant='outlined' style={{backgroundColor: '#282c34'}}>
                 <div className='imgCont'>
                   <Image alt='kuva' src={logo} rounded style={{maxHeight:'50vh', maxWidth:'50vh', padding: '2vh' }} />
                 </div>
@@ -148,7 +148,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     B.B.A, Software Development, Business information systems
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography className='dateAlign' variant='body2'>
                       2017-
                     </Typography>
                   </div>
@@ -162,11 +162,18 @@ export default class Saku extends Component {
 
                     <div className='textContRow'>
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
-                        Talotekniikan perustutkinto. (HVAC-installer)
+                    Building services engineering, undergraduate degree
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography className='dateAlign' variant='body2'>
                       2012
                     </Typography>
+                  </div>
+
+                  <div className='textContRow'>
+                    <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    (HVAC-installer)
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}/>
                   </div>
 
                   <div className='textContRow'>
@@ -187,9 +194,9 @@ export default class Saku extends Component {
 
                   <div className='textContRow'>
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
-                     ARE OY
+                     ARE Oy
                     </Typography>
-                    <Typography variant='body2' style={{ textAlign:'justify', flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white'}}>
+                    <Typography className='dateAlign' variant='body2'>
                       10/2016 – 07/2017
                     </Typography>
                   </div>
@@ -204,7 +211,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     LVI-Katila Oy
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify',paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography className='dateAlign' variant='body2'>
                     04/2016 – 09/2016
                     </Typography>
                   </div>
@@ -219,8 +226,8 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Pohjanmaanputki Oy
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify', textAlign:'justify',paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
-                      Oy, 07/2013 – 07/2016
+                    <Typography className='dateAlign' variant='body2'>
+                      07/2013 – 07/2016
                     </Typography>
                   </div>
                   <div className='textContRow'>
@@ -234,7 +241,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     Avoin yhteiö Keisasen Turkis
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography className='dateAlign' variant='body2'>
                       06/2011 – 07/2011
                     </Typography>
                   </div>
@@ -249,7 +256,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     Lehtimäen Opisto
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography className='dateAlign' variant='body2'>
                       07/2010 – 10/2011
                     </Typography>
                   </div>
@@ -271,13 +278,19 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Rakennusliitto
                     </Typography>
-                    <Typography variant='body2' style={{flex:'1', textAlign:'justify', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography className='dateAlign' variant='body2'>
                       2016
                     </Typography>
                   </div>
                   <div className='textContRow'>
                     <Typography variant='body2' style={{flex:'2', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
-                      Seinäjoen osaston putkijaosto, Kirjuri
+                      Notetaker
+                    </Typography>
+                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
+                  </div>
+                  <div className='textContRow'>
+                    <Typography variant='body2' style={{flex:'2', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}>
+                      Seinäjoen osaston putkijaosto
                     </Typography>
                     <Typography variant='body2' style={{ flex:'1', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}/>
                   </div>

@@ -11,6 +11,7 @@
         flex: 1; 
         flex-direction: column;
         padding-left: 15vh;
+        padding-right: 5vh;
     }
 
     .textContShort {
@@ -33,10 +34,17 @@
     .textCont {
         display: flex;
         flex: 2;
-        padding-left: 15vh;
+        padding-left: 5vh;
         padding-right: 15vh;
         min-width: 50vh;
         max-width: 150vh;
+    }
+    .dateAlign {
+        flex: 1; 
+        padding-bottom: 0.5vh;
+        padding-inline: 5vh;
+        text-align: justify;
+        color: white;
     }
 }
 
@@ -76,5 +84,12 @@
 
     .SkillLevel{
         display: none !important;
+    }
+
+    .dateAlign {
+        flex: 1; 
+        padding-bottom: 0.5vh;
+        padding-inline: 5vh;
+        color: white;
     }
 }
