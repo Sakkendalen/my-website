@@ -1,4 +1,4 @@
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1150px) {
     .content {
         display: flex; 
         flex: 1; 
@@ -40,7 +40,7 @@
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1150px) {
     .content {
         display: flex; 
         flex: 1; 

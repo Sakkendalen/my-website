@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Typography, Paper, Divider, Link } from '@material-ui/core';
-import { Image } from 'react-bootstrap';
+import { Image, Media } from 'react-bootstrap';
 import { green } from '@material-ui/core/colors';
 import { Rating } from '@material-ui/lab';
+import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
 
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import WorkRoundedIcon from '@material-ui/icons/WorkRounded';
@@ -188,12 +189,12 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                      ARE OY
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{ textAlign:'justify', flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white'}}>
                       10/2016 – 07/2017
                     </Typography>
                   </div>
                   <div className='textContRow'>
-                    <Typography variant='body2' style={{ flex:'2', paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{ flex:'2',paddingBottom: '2vh', paddingInline: '5vh', color: 'white' }}>
                       HV-installer
                     </Typography>
                     <Typography variant='body2' style={{ flex:'1', paddingBottom: '1vh', paddingInline: '5vh', color: 'white' }}/>
@@ -203,7 +204,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     LVI-Katila Oy
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify',paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     04/2016 – 09/2016
                     </Typography>
                   </div>
@@ -218,7 +219,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Pohjanmaanputki Oy
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify', textAlign:'justify',paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Oy, 07/2013 – 07/2016
                     </Typography>
                   </div>
@@ -233,7 +234,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     Avoin yhteiö Keisasen Turkis
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       06/2011 – 07/2011
                     </Typography>
                   </div>
@@ -248,7 +249,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                     Lehtimäen Opisto
                     </Typography>
-                    <Typography variant='body2' style={{ flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{ flex:'1', textAlign:'justify', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       07/2010 – 10/2011
                     </Typography>
                   </div>
@@ -270,7 +271,7 @@ export default class Saku extends Component {
                     <Typography variant='body1' style={{flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       Rakennusliitto
                     </Typography>
-                    <Typography variant='body2' style={{flex:'1', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
+                    <Typography variant='body2' style={{flex:'1', textAlign:'justify', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
                       2016
                     </Typography>
                   </div>
