@@ -238,7 +238,7 @@ export default class Saku extends Component {
 
                   <div className='textContRow'>
                     <Typography variant='body1' style={{ flex:'2', paddingBottom: '0.5vh', paddingInline: '5vh', color: 'white' }}>
-                    Avoin yhteiö Keisasen Turkis
+                    Avoin yhteisö Keisasen Turkis
                     </Typography>
                     <Typography className='dateAlign' variant='body2'>
                       06/2011 – 07/2011
