@@ -1,3 +1,7 @@
+# Running in amplify-app
+https://master.d32llwlf2t0b9d.amplifyapp.com/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
